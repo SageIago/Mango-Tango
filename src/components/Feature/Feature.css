@@ -1,0 +1,60 @@
+.Hub_Features_Container_Feature {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.Hub_Features_Container_Feature-Title {
+    flex: 1;
+    max-width: 180px;
+    margin-right: 2rem;
+}
+
+.Hub_Features_Container_Feature-Title  h1 {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--color-text);
+    letter-spacing: -0.04em;
+}
+
+
+.Hub_Features_Container_Feature-Title div {
+    width: 38px;
+    height: 4px;
+    background: var(--gradient-bar);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0 0.25);
+    margin-bottom: 0.35rem;
+}
+
+.Hub_Features_Container_Feature-Text {
+    flex: 2;
+    max-width: 390px;
+    display: flex;
+}
+
+.Hub_Features_Container_Feature-Text p {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+@media screen and (max-width: 550px) {
+    .Hub_Features_Container_Feature-Title h1 {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+
+    .Hub_Features_Container_Feature-Text p{
+        font-size: 10px;
+        line-height: 18px;
+        font-weight: lighter;   
+    }
+}

@@ -1,0 +1,25 @@
+/* IMPORT JETBRAINS MONO FONT FROM GOOGLE FONTS  */
+
+:root {
+  --font-family: "Jetbrains Mono", sans-serif;
+  --gradient-text: linear-gradient(
+    36deg,
+    rgba(95, 111, 157, 1) 1%,
+    rgba(255, 255, 255, 1) 16%,
+    rgba(129, 175, 221, 1) 45%,
+    rgba(46, 129, 7, 1) 100%
+  );
+
+  --gradient-bar: /* global 94%+ browsers support */ linear-gradient(
+    23deg,
+    rgba(4, 72, 84, 0) 3%,
+    rgba(23, 114, 8, 1) 77%
+  );
+
+  --color-background: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #ffffff;
+  --color-subtext: #81AFDD;
+  --color-tertiary: #2e8107;
+}

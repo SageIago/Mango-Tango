@@ -1,0 +1,148 @@
+.Hub_Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.Hub_Navbar-Links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Hub_Navbar_Logo {
+  margin-left: 1.5rem;
+}
+
+.Hub_Navbar_Logo img {
+  width: 62px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.Hub_Navbar-Links_Container {
+  display: flex;
+  flex-direction: row;
+  margin-left: .55rem;
+}
+
+.Hub_Navbar_Sign-In {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Hub_Navbar-Links_Container p,
+.Hub_Navbar_Sign-In p,
+.Hub-Navbar_Menu-Container p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.Hub_Navbar_Sign-In button,
+.Hub_Navbar_Menu-Container button {
+  background: var(--color-tertiary);
+  color: #ffffff;
+  padding: 0.55rem 1rem;
+  font-family: var(--font-family);
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.Hub_Navbar_Menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.Hub_Navbar_Menu-Container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: var(--font-family);
+  background: var(--color-footer);
+  margin-top: 1.5rem;
+  font-size: 14px;
+  top: 40px;
+  right: 0;
+  min-width: 210px;
+  border-radius: 5px;
+  position: absolute;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.Hub_Navbar_Menu-Container p {
+  margin: 1rem 1.5rem;
+}
+
+.Hub_Navbar_Menu-Container-Links-Sign p {
+  display: none;
+}
+
+/* BIGGER VERSIONS */
+
+@media screen and (max-width: 1275px) {
+  .Hub_Navbar-Links_Container p {
+    font-size: 13px;
+  }
+}
+
+
+
+@media screen and (max-width: 1050px) {
+  .Hub_Navbar-Links_Container {
+    display: none;
+  }
+
+  .Hub_Navbar_Menu {
+    display: flex;
+  }
+
+  .Hub_Navbar_Menu-Container-Links-Sign button {
+    display: none;
+  }
+
+  .Hub_Navbar-Links_Container p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hub_Navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .Hub_Navbar {
+    padding: 2rem;
+  }
+
+  .Hub_Navbar_Sign-In {
+    display: none;
+  }
+
+  .Hub_Navbar_Menu-Container {
+    top: 20px;
+  }
+
+  .Hub_Navbar_Menu-Container-Links-Sign p,
+  .Hub_Navbar_Menu-Container-Links-Sign button {
+    display: block;
+  }
+
+  .Hub_Navbar_Menu-Container-Links-Sign button {
+    margin: 0.95rem;
+  }
+}

@@ -1,0 +1,131 @@
+.Hub_About {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  background: var(--color-footer);
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at -30% 100%,
+    rgba(4, 44, 84, 1) 25%,
+    rgba(3, 27, 52, 1) 95%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0 0.25));
+
+  border-radius: 8px;
+}
+
+
+.Hub_About-Feature {
+    display: flex;
+}
+
+.Hub_About-Feature .Hub_Features_Container_Feature{
+    margin: 0;
+}
+
+.Hub_About-Feature .Hub_Features_Container_Feature-Text{
+    max-width: 700px;
+}
+
+.Hub_About-Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 4rem 0 2rem;
+}
+
+.Hub_About-Heading h1 {
+    font-family: var(--font-family);
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 510px;
+
+}
+
+.Hub_About-Heading p {
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.Hub_About_Container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.Hub_About_Container .Hub_Features_Container_Feature {
+    flex: 1;
+    display: unset;
+    margin: 1rem;
+    min-width: 210px;
+    flex-direction: column;
+}
+
+.Hub_About_Container .Hub_Features_Container_Feature-Text {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 850px) {
+    .Hub_About-Heading h1 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .Hub_About-Heading p {
+        display: none;
+    }
+    
+    .Hub_About-Feature .Hub_Features_Container_Feature-Text{
+        margin-top: 0.5rem;
+    }
+
+    .Hub_About-Heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Hub_About-Feature .Hub_Features_Container_Feature{
+        flex-direction: column;
+    }
+    
+    .Hub_About-Feature .Hub_Features_Container_Feature-Text{
+        margin-top: 0.5rem;
+    }
+
+    .Hub_About-Heading h1 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .Hub_About-Heading h1 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .Hub_About-Heading p {
+        display: none;
+    }
+
+    .Hub_About_Container .Hub_Features_Container_Feature{
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+
+}
